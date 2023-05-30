@@ -48,3 +48,8 @@ export function sexo(name) {
     return "Femenino"
   }else return "Masculino"
 }
+
+export function porcentajeAcierto(cuota) {
+  var porcentaje = (1 / cuota) * 100;
+  return porcentaje.toFixed(2); // Redondea el resultado a 2 decimales
+}

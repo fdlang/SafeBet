@@ -1,22 +1,33 @@
 import {useEffect} from 'react';
 import useSafeBet from '../hooks/useSafeBet'
 import { mapPlayerImage } from "../utils/imageMapperMen";
-import {removeTagAndContent} from '../utils/helpers'
+import {removeTagAndContent, formatNameTorneo, porcentajeAcierto} from '../utils/helpers'
+
 
 export default function ModalPartido() {
 
-    const {datosPartido, handleClickModal, handleAgregarFavorito, favorito} = useSafeBet();
+    const {datosPartido, handleClickModal, handleAgregarFavorito, favorito, datos} = useSafeBet();
 
     const imagen1 = mapPlayerImage(datosPartido.home_name);
     const imagen2 = mapPlayerImage(datosPartido.away_name);
     const formatPartialresult = removeTagAndContent(datosPartido.partialresult);
+    const titulo = formatNameTorneo(datos.name);
+    const odds_local = porcentajeAcierto(datosPartido.odds_local);
+    const odds_visitor = porcentajeAcierto(datosPartido.odds_visitor);
 
     useEffect(() => {
         if(favorito.some(favoritoState => favoritoState.id === datosPartido.id)) {
             console.log('si esta en favoritos')
         }
     }, [favorito])
-    console.log(datosPartido)
+    
+    // Determinar el nombre del ganador del partido
+    let ganador = null;
+    if (datosPartido.away_winner === 'win') {
+        ganador = datosPartido.away_name;
+    } else if (datosPartido.home_winner === 'win') {
+        ganador = datosPartido.home_name;
+    }
 
     return (
         <div className='md:flex gap-10'>
@@ -32,51 +43,72 @@ export default function ModalPartido() {
             </div>
 
             <div className='md:w-2/3'>
-                <h1 className='text-3xl font-bold mt-5'>
-                    {"Nombre del torneo"}
+                <h1 className='text-3xl font-bold mt-5 text-center'>
+                    {titulo}
                 </h1>
 
-                <p className="text-sm">
+                <p className="text-sm text-center">
                         <br /> <strong>País</strong>
                         <br/>
                         {datosPartido.country_name}
                 </p>
 
-                <p className="text-sm">
+                <p className="text-sm text-center">
                     <br /> <strong>Resultado SET</strong>
                     <br/>
                     {formatPartialresult}
                 </p>
 
-                <p className="text-sm">
+                <p className="text-sm text-center">
                     <br /> <strong>Resultado final</strong>
                     <br />
                     {datosPartido.homeResult + " - " + datosPartido.awayResult}
                 </p>
 
-                <p className="text-sm">
+                <p className="text-sm text-center">
                     <br /> <strong>Cuotas</strong>
                     <br />
                     {datosPartido.odds_local + " - " + datosPartido.odds_visitor}
                 </p>
+
+                <p className="text-m text-center">
+                    <br /> <strong>Probabilidad de ganar el partido</strong>
+                    <br />
+                    {odds_local + " %" + " - " + odds_visitor + " %"} 
+                </p>
+
+                <p className="text-sm text-center">
+                    <br /> <strong>Ganador del partido</strong>
+                    <br />
+                    {ganador !== null ? ganador : "Por disputar"}
+                </p>
            
-                <div className='mt-5'
-                    onClick={() => {
-                        handleClickModal();
-                        handleAgregarFavorito(datosPartido);
-                    }}>
+                <div 
+                    className='mt-5 flex justify-center' 
+                    onClick={() => { 
+                        handleClickModal(); 
+                        handleAgregarFavorito(datosPartido); }}
+                    >
                     <input
-                    className=" bg-indigo-600 hover:bg-indigo-800 text-white w-full text-lg text-lg font-bold cursor-pointer mt-5"
+                        className='bg-indigo-600 hover:bg-indigo-800 py-2 mt-8 rounded uppercase font-bold text-white text-center w-1/2 cursor-pointer'
                         type="submit" 
                         value='Agregar favorito'        
                     />
                 </div>
+
             </div>
 
             <div className='md:w-3/3'>
                 <div className='flex justify-end'>
                     <button onClick={handleClickModal}>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                        <svg 
+                            xmlns="http://www.w3.org/2000/svg" 
+                            fill="none" 
+                            viewBox="0 0 24 24" 
+                            strokeWidth={1.5} 
+                            stroke="currentColor"
+                            className="w-6 h-6"
+                        >
                              <path strokeLinecap="round" strokeLinejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                     </button>
