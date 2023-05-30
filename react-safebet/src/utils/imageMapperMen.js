@@ -322,13 +322,101 @@ export function mapPlayerImage(playerName) {
     }else if (playerName.includes("Kovacevic A.")){
         return "/img/players_men/kovacevic-aleksandar.png";
     }else if (playerName.includes("Rune H.")){
-        return "/img/players_men/Medvedev D.";
+        return "/img/players_men/holder-rune.png";
     }else if (playerName.includes("Medvedev D.")){
         return "/img/players_men/dani-medvedev.png";
     }else if (playerName.includes("Shevchenko A.")){
         return "/img/players_men/alexander-shevchenko.png";
     }else if (playerName.includes("Otte O.")){
         return "/img/players_men/oscar-otte.png";
+    }else if (playerName.includes("Sinner J.")){
+        return "/img/players_men/sinner.png";
+    }else if (playerName.includes("Altmaier D.")){
+        return "/img/players_men/daniel-altmaier.png";
+    }else if (playerName.includes("Mpetshi Perricard G.")){
+        return "/img/players_men/perricard-mpetshi.png";
+    }else if (playerName.includes("Nishioka Y.")){
+        return "/img/players_men/yoshihito-nishioka.png";
+    }else if (playerName.includes("Paul T.")){
+        return "/img/players_men/tomy-paul.png";
+    }else if (playerName.includes("Purcell M.")){
+        return "/img/players_men/max-purcell.png";
+    }else if (playerName.includes("Thompson J.")){
+        return "/img/players_men/jordan-thompson.png";
+    }else if (playerName.includes("Kecmanovic M.")){
+        return "/img/players_men/miomir-kecmanovic.png";
+    }else if (playerName.includes("Ymer E.")){
+        return "/img/players_men/elias-ymer.png";
+    }else if (playerName.includes("Ruud C.")){
+        return "/img/players_men/casper-ruud.png";
+    }else if (playerName.includes("Gaston H.")){
+        return "/img/players_men/hugo-gaston.png";
+    }else if (playerName.includes("Molcan A.")){
+        return "/img/players_men/alex-molcan.png";
+    }else if (playerName.includes("Harris L.")){
+        return "/img/players_men/lloyd-harris.png";
+    }else if (playerName.includes("Cerundolo F.")){
+        return "/img/players_men/francisco-cerundolo.png";
+    }else if (playerName.includes("Munar J.")){
+        return "/img/players_men/jaume-munar.png";
+    }else if (playerName.includes("Halys Q.")){
+        return "/img/players_men/quentin-halys.png";
+    }else if (playerName.includes("Monteiro T.")){
+        return "/img/players_men/thiago-monteiro.png";
+    }else if (playerName.includes("Ruusuvuori E.")){
+        return "/img/players_men/emil-ruusuvuori.png";
+    }else if (playerName.includes("Barrere G.")){
+        return "/img/players_men/gregorie-barrere.png";
+    }else if (playerName.includes("Gasquet R.")){
+        return "/img/players_men/richard-gasquet.png";
+    }else if (playerName.includes("Rinderknech A.")){
+        return "/img/players_men/arthur-rinderknech.png";
+    }else if (playerName.includes("Mmoh M.")){
+        return "/img/players_men/michael-mmoh.png";
+    }else if (playerName.includes("Fritz T.")){
+        return "/img/players_men/taylor-fritz.png";
+    }else if (playerName.includes("Dimitrov G.")){
+        return "/img/players_men/grigor-dimitrov.png";
+    }else if (playerName.includes("Monfils G.")){
+        return "/img/players_men/gael-monfils.png";
+    }else if (playerName.includes("Baez S.")){
+        return "/img/players_men/sebastian-baez.png";
+    }else if (playerName.includes("Daniel T.")){
+        return "/img/players_men/taro-daniel.png";
+    }else if (playerName.includes("Shapovalov D.")){
+        return "/img/players_men/denis-shapovalov.png";
+    }else if (playerName.includes("Bautista-Agut R.")){
+        return "/img/players_men/bautista-agut.png";
+    }else if (playerName.includes("Varillas J. P.")){
+        return "/img/players_men/juanpablo-varillas.png";
+    }else if (playerName.includes("Coric B.")){
+        return "/img/players_men/borna-coric.png";
+    }else if (playerName.includes("Cachin P.")){
+        return "/img/players_men/pedro-cachin.png";
+    }else if (playerName.includes("Etcheverry T. M.")){
+        return "/img/players_men/tomas-etcheverry.png";
+    }else if (playerName.includes("De Minaur A.")){
+        return "/img/players_men/alex-de-minaur.png";
+    }else if (playerName.includes("Fognini F.")){
+        return "/img/players_men/fabio-fognini.png";
+    }else if (playerName.includes("Tiafoe F.")){
+        return "/img/players_men/frances-tiafoe.png";
+    }else if (playerName.includes("Lehecka J.")){
+        return "/img/players_men/jjiri-lehecka.png";
+    }else if (playerName.includes("Korda S.")){
+        return "/img/players_men/sebastian-korda.png";
+    }else if (playerName.includes("Norrie C.")){
+        return "/img/players_men/cameron-norrie.png";
+    }else if (playerName.includes("Schwartzman D.")){
+        return "/img/players_men/diego-schwartzman.png";
+    }else if (playerName.includes("Humbert U.")){
+        return "/img/players_men/ugo-humbert.png";
+    }else if (playerName.includes("van Assche L.")){
+        return "/img/players_men/luca-van-assche.png";
+    }else if (playerName.includes("Davidovich Fokina A.")){
+        return "/img/players_men/davidovich-fokina.png";
+    }else if (playerName.includes("Wawrinka S.")){
+        return "/img/players_men/stan-wawrinka.png";
     }
     
     
