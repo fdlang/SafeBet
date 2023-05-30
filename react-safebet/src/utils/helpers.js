@@ -14,8 +14,13 @@ export function formatNameTorneo(text) {
 }
 
 export function firstLetterUpperCase(text) {
-  const formattedText = text.charAt(0).toUpperCase() + text.slice(1).toLowerCase();
-  return formattedText;
+  if (text.includes('-')) {
+    const formattedText = text.replace(/-/g, ' ').charAt(0).toUpperCase() + text.replace(/-/g, ' ').slice(1).toLowerCase();
+    return formattedText;
+  } else {
+    const formattedText = text.charAt(0).toUpperCase() + text.slice(1).toLowerCase();
+    return formattedText;
+  }
 }
 
 export function removeParentheses(text) {
