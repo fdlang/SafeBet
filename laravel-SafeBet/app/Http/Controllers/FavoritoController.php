@@ -26,7 +26,7 @@ class FavoritoController extends Controller
     public function store(Request $request)
     {
         $userId = Auth::user()->id;
-
+        
         // Obtener los partidos seleccionados
         $partidos = $request->partidos;
 
@@ -52,7 +52,6 @@ class FavoritoController extends Controller
             $favorito->save();
             $favoritoId = $favorito->id;
         }
-
         // Crear nuevos registros de FavoritoPartido para los partidos no existentes
         $favoritoPartidos = [];
 
@@ -70,32 +69,31 @@ class FavoritoController extends Controller
         if (count($favoritoPartidos) === 0) {
             return response()->json(['message' => 'El partido ya existen como favorito.'], 400);
         }
-
         // Insertar los nuevos registros de FavoritoPartido
         FavoritoPartido::insert($favoritoPartidos);
 
         return response()->json(['message' => 'Agregando a favoritos']);
     }
 
+    /**
+     * Display the favorite resource for the authenticated user.
+     */
+    public function show()
+    {
+        if (Auth::check()) {
+            $userId = Auth::id();
 
-public function show()
-{
-    if (Auth::check()) {
-        $userId = Auth::id();
+            $partidos = DB::table('partidos')
+                ->join('favorito_partidos', 'partidos.id', '=', 'favorito_partidos.partido_id')
+                ->join('favoritos', 'favoritos.id', '=', 'favorito_partidos.favorito_id')
+                ->where('favoritos.user_id', $userId)
+                ->select('partidos.*')
+                ->get();
 
-        $partidos = DB::table('partidos')
-            ->join('favorito_partidos', 'partidos.id', '=', 'favorito_partidos.partido_id')
-            ->join('favoritos', 'favoritos.id', '=', 'favorito_partidos.favorito_id')
-            ->where('favoritos.user_id', $userId)
-            ->select('partidos.*')
-            ->get();
-
-        return response()->json(['partidos' => $partidos]);
+            return response()->json(['partidos' => $partidos]);
+        }
+        return response()->json(['message' => 'Usuario no autenticado.'], 401);
     }
-
-    return response()->json(['message' => 'Usuario no autenticado.'], 401);
-}
-
 
 
     /**
