@@ -2,6 +2,7 @@ import {Outlet} from 'react-router-dom'
 import Favoritos from '../componets/Favoritos'
 import Sidebar from '../componets/Sidebar'
 import {useAuth} from '../hooks/useAuth'
+import { ToastContainer } from 'react-toastify'
 
 export default function Layout() {
 
@@ -17,6 +18,7 @@ export default function Layout() {
 					<Outlet/>
 				</main>
 				<Favoritos/>
+				<ToastContainer/>
 		</div>
 	)
 }

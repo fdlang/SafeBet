@@ -42,7 +42,7 @@ class PartidoController extends Controller
         foreach ($partidosToDelete as $partido) {
             $partido->delete();
         }  
-        return response()->json(['message' => 'Registros eliminados correctamente.']);
+        return response()->json(['message' => 'Registros eliminados correctamente.'], 200);
     }
     
 }

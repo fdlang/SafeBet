@@ -13,14 +13,6 @@ use Illuminate\Support\Facades\DB;
 class FavoritoController extends Controller
 {
     /**
-     * Display a listing of the resource.
-     */
-    public function index()
-    {
-        //
-    }
-
-    /**
      * Store a newly created resource in storage.
      */
     public function store(Request $request)
@@ -97,14 +89,6 @@ class FavoritoController extends Controller
 
 
     /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, Favorito $favorito)
-    {
-        //
-    }
-
-    /**
      * Remove the specified resource from storage.
      */
     public function destroy($id)
@@ -116,8 +100,7 @@ class FavoritoController extends Controller
             $favoritoPartido->delete();
             
             return response()->json(['message' => 'Eliminando de favoritos.']);
-        }
-        
+        }     
         return response()->json(['message' => 'No se encontró el favorito.']);
     }
 }

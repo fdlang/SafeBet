@@ -15,7 +15,7 @@ const router= createBrowserRouter([
             {
                 index: true,
                 element: <Inicio/>
-            }
+            },
         ]
     },
     {
@@ -33,11 +33,11 @@ const router= createBrowserRouter([
         ]
     },
     {
-        path: '/prueba',
+        path: '/partidos',
         element: <InicioUserLayout/>,
         children:[
             {
-                path: '/prueba/inicio',
+                path: '/partidos/inicio',
                 element: <InicioUser/>
             }
 

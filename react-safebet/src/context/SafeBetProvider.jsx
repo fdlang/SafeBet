@@ -108,6 +108,7 @@ const SafeBetProvider = ({children}) => {
                 toast.error(data.message)
             }else {
                 toast.success(data.message);
+                setFavorito([...favorito, partidos]);
                 mutate(`/api/favoritos/${id}`);
             }
         } catch (error) {

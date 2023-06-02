@@ -1,3 +1,4 @@
+import {useEffect, useState} from 'react';
 import useSWR, {mutate} from 'swr';
 import clienteAxios from '../config/axios';
 import FavoritoPartido from './FavoritoPartido';
@@ -10,13 +11,22 @@ export default function Resumen() {
         Authorization: `Bearer ${token}`,
         },
     };
-        
-    const { data: partidos, error, isLoading } = useSWR('/api/partidos', () =>
-        clienteAxios.get('/api/partidos', config).then((res) => res.data.partidos)
+      
+    const { data: partidos, error, isLoading } = useSWR('/api/favoritos/partidos', () =>
+        clienteAxios.get('/api/favoritos/partidos', config).then((res) => res.data.partidos)
     );
-    mutate('/api/partidos');
+    mutate('/api/favoritos/partidos')
 
+/*
+    const [partidos, setPartidos] = useState([]);
 
+    useEffect(() => {
+        const {data, error, isLoading} = useSWR('/api/favoritos/partidos', () => 
+        clienteAxios.get('/api/favoritos/partidos', config).then((res) => res.data.partidos)
+        );
+        if (data) setPartidos(data);
+    }, [partidos]);
+*/
     return (
         <aside className="md:w-72 h-screen overflow-y-scroll p-5">
             <h1 className="text-2xl font-black">Mis favoritos</h1>

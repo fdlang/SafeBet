@@ -17,11 +17,10 @@ export default function Torneo({torneo}){
 		const formatMatches = removeParentheses(matches)
 	 
 		const pais = bandera(formatCountry);
-		console.log(formatCountry);
 		const categoria = category(name);
 	
 		const enviarID = (id) => {
-				axios.get(`http://localhost:8000/api/id/${id}`)
+				axios.get(`http://localhost:8000/api/partido/${id}`)
 				.then((response) => {
 						console.log("Respuesta enviarID: " + response)
 				})
@@ -30,24 +29,25 @@ export default function Torneo({torneo}){
 				});      
 		};
 	 
+		
 		return (
 				<Link 
 					onClick={() => {
 						handleClickDatos(torneo);
 						enviarID(id);             
 					}}
-					to='/prueba/inicio'
+					to='/partidos/inicio'
 				>
 					<div className={`border p-3 shadow bg-white hover:bg-amber-400 cursor-pointer mt-5`} >
 						<div className={`${pais}`}></div>   
 							<div className="p-5">
 								<div className="text-lg truncate" style={{ position: 'relative', zIndex: 2 }}>    
 									<p>
-										<strong>Pais: </strong> {formatCountry} <br/> 
-										<strong>Nombre: </strong> {delCategory(formatName)} <br/>
+										<strong>Pais: </strong> {formatCountry} <br />
+										<strong>Nombre: </strong> {delCategory(formatName)} <br />
 										<strong>Categoria: </strong> {categoria} {categoria_id === 3 && sexo(name)} <br />
-										<strong>Partidos: </strong> {formatMatches}                  
-									</p>                             
+										<strong>Partidos: </strong> {formatMatches}
+									</p>
 								</div>   
 							</div>  
 					</div>

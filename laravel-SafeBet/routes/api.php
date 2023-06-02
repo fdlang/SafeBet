@@ -29,10 +29,8 @@ Route::middleware('auth:sanctum')->group(function() {
 
     // Favoritos
     Route::apiResource('/favoritos', FavoritoController::class);    
-    Route::delete('favoritos/{id}', [FavoritoController::class, 'destroy']);
-
-    // Partidos
-    Route::get('/partidos', [FavoritoController::class, 'show']);
+    Route::delete('/favoritos/{id}', [FavoritoController::class, 'destroy']);
+    Route::get('/favoritos/partidos', [FavoritoController::class, 'show']);
 });
 
 Route::apiResource('/tour', TourController::class);

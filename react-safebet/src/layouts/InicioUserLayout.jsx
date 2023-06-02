@@ -39,7 +39,10 @@ export default function InicioUserLayout() {
 					</main>
 					<Favoritos/>
 			</div>
-			<Modal isOpen={modal} style={customStyles}>				
+			<Modal 
+				isOpen={modal}
+				style={customStyles}>	
+							
 				<ModalPartido/>					
 			</Modal>
 			<ToastContainer/>
