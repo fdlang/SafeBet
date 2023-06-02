@@ -56,13 +56,13 @@ export default function ModalPartido() {
                 <p className="text-sm text-center">
                     <br /> <strong>Resultado SET</strong>
                     <br/>
-                    {formatPartialresult}
+                    {formatPartialresult ? formatPartialresult : "Por definir"}
                 </p>
 
                 <p className="text-sm text-center">
                     <br /> <strong>Resultado final</strong>
                     <br />
-                    {datosPartido.homeResult + " - " + datosPartido.awayResult}
+                    {datosPartido.homeResult ? datosPartido.homeResult + " - " + datosPartido.awayResult : "Por definir"}
                 </p>
 
                 <p className="text-sm text-center">

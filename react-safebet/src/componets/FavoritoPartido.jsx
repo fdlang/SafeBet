@@ -19,7 +19,7 @@ export default function FavoritoPartido({partido}) {
         <div className="space-y-2">
           <p className="text-xl font-bold">{tournament_name}</p>
           <p className="text-lg ">{jugador1}  VS  {jugador2}</p>
-          <p className="text-lg text-gray-700"> Resultado: {homeResult} - {awayResult} </p>
+          <p className="text-lg text-gray-700"> Resultado: {homeResult ? {homeResult} - {awayResult} : "Por definir"} </p>
         </div>
   
         <div className="flex justify-between gap-2 pb-4">

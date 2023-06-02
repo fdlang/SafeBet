@@ -7,26 +7,21 @@ use App\Models\Partido;
 use App\Http\Controllers\Controller;
 use App\Http\Resources\PartidoCollection;
 use App\Models\Torneo;
-use Illuminate\Http\Request;
 
 
 class PartidoController extends Controller
 {
     public function index(int $idTorneo)
 	{
+        $idTorneo = intval($idTorneo);
+
 		$torneo = Torneo::findOrFail($idTorneo);
 		$url = $torneo->url;
 
-		// Verificar si ya existen partidos en la base de datos
-		//$partidos = Partido::where('torneo_id', $idTorneo)->get();
+        $partidosApiBroker = new PartidoApiBrokerController;
+        $partidos = $partidosApiBroker->getTennisPartido($url);
 
-		//if ($partidos->count() == 0) {
-			// No existen partidos en la base de datos, obtenerlos del servicio externo
-			$partidosApiBroker = new PartidoApiBrokerController;
-			$partidos = $partidosApiBroker->getTennisPartido($url);
-
-			$partidos = Partido::where('torneo_id', $idTorneo)->get();
-		//} 
+        $partidos = Partido::where('torneo_id', $idTorneo)->get();
 
 		return new PartidoCollection($partidos);
 	}

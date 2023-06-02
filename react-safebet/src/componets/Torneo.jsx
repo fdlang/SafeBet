@@ -19,15 +19,16 @@ export default function Torneo({torneo}){
 		const pais = bandera(formatCountry);
 		const categoria = category(name);
 	
-		const enviarID = (id) => {
-				axios.get(`http://localhost:8000/api/partido/${id}`)
-				.then((response) => {
-						console.log("Respuesta enviarID: " + response)
-				})
-				.catch((error) => {
-						console.log("ERROR AL ENVIAR URL: " + error);
-				});      
-		};
+		const enviarID = (id) => {		  
+			axios.get(`http://localhost:8000/api/partido/${id}`)
+			  .then((response) => {
+				console.log("Respuesta enviarID: ", response);
+			  })
+			  .catch((error) => {
+				console.log("ERROR AL ENVIAR URL: ", error);
+			  });      
+		  };
+		  
 	 
 		
 		return (

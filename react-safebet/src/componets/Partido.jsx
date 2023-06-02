@@ -46,13 +46,14 @@ export default function Partido({ partido }) {
                     <p className="text-sm">
                         <br /> <strong>Resultado SET</strong>
                         <br />
-                        {formatPartialresult}
+                        {formatPartialresult ? formatPartialresult : "Por definir"}
                     </p>
 
                     <p className="text-sm">
                         <br /> <strong>Resultado final</strong>
                         <br />
-                        {homeResult + " - " + awayResult}
+                        {homeResult ? homeResult + " - " + awayResult : "Por definir"}
+                        {}
                     </p>
                 </div>
 
