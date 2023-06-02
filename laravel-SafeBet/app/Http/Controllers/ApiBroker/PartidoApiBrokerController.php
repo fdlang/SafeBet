@@ -44,59 +44,62 @@ class PartidoApiBrokerController extends Controller
 
         if ($data) {
             foreach ($data as $item) {
-                // Buscar el partido por su url
-                $partido = Partido::where('url', $item->match->url)->first();
-
-                $urlnombre_torneo = "http://api.brokersports.club/api/v2".$item->match->breadcrumbs->tournament->url;
-                
-                // Buscar el torneo por su URL
-                $torneo = Torneo::where('url', $urlnombre_torneo)->first();
-
-                if ($torneo) {
-                    $torneo_id = $torneo->id;
-                }             
-                
-                if ($partido) {
-                    // Actualizar los campos necesarios
-                    $partido->is_double = $item->match->{"is-double"};
-                    $partido->home_name = $item->match->{"home-name"};
-                    $partido->away_name = $item->match->{"away-name"};
-                    $partido->url = $item->match->{"url"};
-                    $partido->urlname_torneo = $item->match->{"urlname-torneo"};
-                    $partido->homeResult = $item->match->{"homeResult"};
-                    $partido->awayResult = $item->match->{"awayResult"};
-                    $partido->home_winner = $item->match->{"home-winner"};
-                    $partido->away_winner = $item->match->{"away-winner"};
-                    $partido->info = $item->match->{"info"};
-                    $partido->partialresult = $item->match->{"partialresult"};
-                    $partido->result = $item->match->{"result"};
-                    $partido->country_name = $item->match->{"country-name"};
-                    $partido->odds_local = $item->odds[0]->local->avg;
-                    $partido->odds_visitor = $item->odds[0]->visitor->avg;
-                    $partido->save();
-                } else {
-                    // Crear un nuevo partido
-                    Partido::create([
-                        'torneo_id' => $torneo_id,
-                        'is_double' => $item->match->{"is-double"},
-                        'home_name' => $item->match->{"home-name"},
-                        'away_name' => $item->match->{"away-name"},
-                        'url' => $item->match->url,
-                        'urlname_torneo' => $item->match->breadcrumbs->tournament->url,
-                        'homeResult'  => $item->match->{"homeResult"},
-                        'awayResult'  => $item->match->{"awayResult"},
-                        'home_winner' => $item->match->{"home-winner"},
-                        'away_winner' => $item->match->{"away-winner"},
-                        'info' => $item->match->{"info"},
-                        'partialresult' => $item->match->{"partialresult"},
-                        'result' => $item->match->{"result"},
-                        'country_name' => $item->match->{"country-name"},
-                        'odds_local' => $item->odds[0]->local->avg,
-                        'odds_visitor' => $item->odds[0]->visitor->avg,
-                    ]);
-                }
-            }           
-            
+                if (is_object($item)) {
+                    // Buscar el partido por su url
+                    $partido = Partido::where('url', $item->match->url)->first();
+    
+                    $urlnombre_torneo = "http://api.brokersports.club/api/v2".$item->match->breadcrumbs->tournament->url;
+                    
+                    // Buscar el torneo por su URL
+                    $torneo = Torneo::where('url', $urlnombre_torneo)->first();
+    
+                    if ($torneo) {
+                        $torneo_id = $torneo->id;
+                    }             
+                    
+                    if ($partido) {
+                        // Actualizar los campos necesarios
+                        $partido->is_double = $item->match->{"is-double"};
+                        $partido->home_name = $item->match->{"home-name"};
+                        $partido->away_name = $item->match->{"away-name"};
+                        $partido->url = $item->match->{"url"};
+                        $partido->urlname_torneo = $item->match->breadcrumbs->tournament->{"url"};
+                        $partido->homeResult = $item->match->{"homeResult"};
+                        $partido->awayResult = $item->match->{"awayResult"};
+                        $partido->home_winner = $item->match->{"home-winner"};
+                        $partido->away_winner = $item->match->{"away-winner"};
+                        $partido->info = $item->match->{"info"};
+                        $partido->partialresult = $item->match->{"partialresult"};
+                        $partido->result = $item->match->{"result"};
+                        $partido->country_name = $item->match->{"country-name"};
+                        $partido->odds_local = $item->odds[0]->local->avg;
+                        $partido->odds_visitor = $item->odds[0]->visitor->avg;
+                        $partido->save();
+                    } else {
+                        // Crear un nuevo partido
+                        Partido::create([
+                            'torneo_id' => $torneo_id,
+                            'is_double' => $item->match->{"is-double"},
+                            'home_name' => $item->match->{"home-name"},
+                            'away_name' => $item->match->{"away-name"},
+                            'url' => $item->match->url,
+                            'urlname_torneo' => $item->match->breadcrumbs->tournament->url,
+                            'homeResult'  => $item->match->{"homeResult"},
+                            'awayResult'  => $item->match->{"awayResult"},
+                            'home_winner' => $item->match->{"home-winner"},
+                            'away_winner' => $item->match->{"away-winner"},
+                            'info' => $item->match->{"info"},
+                            'partialresult' => $item->match->{"partialresult"},
+                            'result' => $item->match->{"result"},
+                            'country_name' => $item->match->{"country-name"},
+                            'odds_local' => $item->odds[0]->local->avg,
+                            'odds_visitor' => $item->odds[0]->visitor->avg,
+                        ]);
+                    }
+                }else {
+                    throw new Exception('La variable $item no es un objeto válido: ' .$item);
+                }           
+            }
         } else {
             throw new Exception('Error al decodificar la respuesta JSON');
         }

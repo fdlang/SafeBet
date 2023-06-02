@@ -37,7 +37,7 @@ Route::middleware('auth:sanctum')->group(function() {
 
 Route::apiResource('/tour', TourController::class);
 Route::apiResource('/torneos', TorneoController::class)->only(['index','store','destroy']);
-Route::get('/id/{id}', [PartidoController::class, 'index']);
+Route::get('/partido/{idTorneo}', [PartidoController::class, 'index']);
 
 // Autentificacion
 Route::post('/registro', [AuthController::class, 'register']);

@@ -12,51 +12,24 @@ use Illuminate\Http\Request;
 
 class PartidoController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
     public function index(int $idTorneo)
-    {       
-        $torneo = Torneo::findOrFail($idTorneo);
-        $url = $torneo->url;
+	{
+		$torneo = Torneo::findOrFail($idTorneo);
+		$url = $torneo->url;
 
-        // Verificar si ya existen partidos en la base de datos
-        $partidos = Partido::where('torneo_id', $idTorneo)->get();
+		// Verificar si ya existen partidos en la base de datos
+		//$partidos = Partido::where('torneo_id', $idTorneo)->get();
 
-        if($partidos->count() == 0) {
-            // No existen partidos en la base de datos, obtenerlos del servicio externo
-            $partidosApiBroker = new PartidoApiBrokerController;
-            $partidosApiBroker->getTennisPartido($url);
+		//if ($partidos->count() == 0) {
+			// No existen partidos en la base de datos, obtenerlos del servicio externo
+			$partidosApiBroker = new PartidoApiBrokerController;
+			$partidos = $partidosApiBroker->getTennisPartido($url);
 
-            $partidos = Partido::where('torneo_id', $idTorneo)->get();
-    }
+			$partidos = Partido::where('torneo_id', $idTorneo)->get();
+		//} 
 
-    return new PartidoCollection($partidos);
-    }
-
-        /**
-     * Store a newly created resource in storage.
-     */
-    public function store(Request $request, Partido $partido)
-    {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     */
-    public function show(Partido $partido)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, Partido $partido)
-    {
-        //
-    }
+		return new PartidoCollection($partidos);
+	}
 
     /**
      * Remove the specified resource from storage.
