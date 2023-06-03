@@ -417,6 +417,10 @@ export function mapPlayerImage(playerName) {
         return "/img/players_men/davidovich-fokina.png";
     }else if (playerName.includes("Wawrinka S.")){
         return "/img/players_men/stan-wawrinka.png";
+    }else if (playerName.includes("Ram R.")){
+        return "/img/players_men/rajeev-ram.png";
+    }else if (playerName.includes("Salisbury J.")){
+        return "/img/players_men/joe-salisbury.png";
     }
     
     

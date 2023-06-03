@@ -5,7 +5,7 @@ import {removeTagAndContent, formatNameTorneo, porcentajeAcierto, separarNombres
 
 export default function ModalPartido() {
 
-	const {datosPartido, handleClickModal, handleAgregarFavorito, favorito, datos} = useSafeBet();
+	const {datosPartido, handleClickModal, handleAgregarFavorito, datos} = useSafeBet();
 
 	const imagen1 = mapPlayerImage(datosPartido.home_name);
 	const imagen2 = mapPlayerImage(datosPartido.away_name);
