@@ -13,8 +13,6 @@ class PartidoController extends Controller
 {
     public function index(int $idTorneo)
 	{
-        $idTorneo = intval($idTorneo);
-
 		$torneo = Torneo::findOrFail($idTorneo);
 		$url = $torneo->url;
 

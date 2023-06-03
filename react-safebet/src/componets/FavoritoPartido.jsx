@@ -9,7 +9,7 @@ export default function FavoritoPartido({partido}) {
         ["away_name"]: jugador2, 
         homeResult,
         awayResult,
-        ["tournament_name"]: tournament_name,        
+        tournament_name,        
         
     } = partido;
 
