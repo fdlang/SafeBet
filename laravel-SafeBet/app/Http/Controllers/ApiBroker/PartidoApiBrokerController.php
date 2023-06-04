@@ -96,9 +96,7 @@ class PartidoApiBrokerController extends Controller
                             'odds_visitor' => $item->odds[0]->visitor->avg,
                         ]);
                     }
-                }else {
-                    throw new Exception('La variable $item no es un objeto válido: ' .$item);
-                }           
+                }
             }
         } else {
             throw new Exception('Error al decodificar la respuesta JSON');

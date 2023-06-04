@@ -62,5 +62,5 @@ export function separarNombres(nombres) {
 		const nombre2 = nombresSeparados[1].trim();
 		return [nombre1, nombre2];
 	}
-	return null; 
+	return ""; 
 }

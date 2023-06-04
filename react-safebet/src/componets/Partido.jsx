@@ -1,6 +1,6 @@
 import useSafeBet from "../hooks/useSafeBet";
 import { mapPlayerImage } from "../utils/imageMapperMen";
-import {removeTagAndContent} from '../utils/helpers'
+import {removeTagAndContent, separarNombres} from '../utils/helpers'
 
 export default function Partido({ partido }) {
    
