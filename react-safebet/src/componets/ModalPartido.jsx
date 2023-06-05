@@ -74,13 +74,13 @@ export default function ModalPartido() {
 					{titulo}
 				</h1>
 
-				<p className="text-sm text-center">
+				<p className="pt-5 text-m text-center">
 						<br /> <strong>País</strong>
 						<br/>
 						{datosPartido.country_name}
 				</p>
 
-				<p className="text-sm text-center">
+				<p className="text-m text-center">
 					<br /> <strong>Resultado SET</strong>
 					<br/>
 					{formatPartialresult ? formatPartialresult : "Por definir"}
@@ -92,7 +92,7 @@ export default function ModalPartido() {
 					{datosPartido.homeResult ? datosPartido.homeResult + " - " + datosPartido.awayResult : "Por definir"}
 				</p>
 
-				<p className="text-sm text-center">
+				<p className="text-m text-center">
 					<br /> <strong>Cuotas</strong>
 					<br />
 					{datosPartido.odds_local + " - " + datosPartido.odds_visitor}
@@ -104,7 +104,7 @@ export default function ModalPartido() {
 					{odds_local + " %" + " - " + odds_visitor + " %"} 
 				</p>
 
-				<p className="text-sm text-center">
+				<p className="text-m text-center">
 					<br /> <strong>Ganador del partido</strong>
 					<br />
 					{ganador !== null ? ganador : "Por disputar"}
@@ -154,7 +154,7 @@ export default function ModalPartido() {
 					) : (
 						<div>
 							<img
-								 className='pt-5 w-full object-contain'
+								className='pt-5 w-full object-contain'
 								alt={`Imagen equipo 2, jugador 3 ${jugador3}`}
 								src={jugador3}
 							/>
@@ -163,7 +163,7 @@ export default function ModalPartido() {
 							</p>
 
 							<img
-								 className='pt-5 w-full object-contain'
+								className='pt-5 w-full object-contain'
 								alt={`Imagen equipo 1, jugador 2 ${jugador4}`}
 								src={jugador4}
 							/>
