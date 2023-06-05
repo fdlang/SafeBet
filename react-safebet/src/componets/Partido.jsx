@@ -28,6 +28,7 @@ export default function Partido({ partido }) {
 	const jugador3 = mapPlayerImage(equipoAway[0]);
 	const jugador4 = mapPlayerImage(equipoAway[1]);
 
+
     return (
         <div
             className="border p-3 shadow bg-white hover:bg-amber-400"

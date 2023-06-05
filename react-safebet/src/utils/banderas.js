@@ -25,6 +25,8 @@ export function bandera(country) {
     Portugal: "trianglePortugal",
     Thailand: "triangleTailandia",
     Indonesia: "triangleIndonesia",
+    "United kingdom": "triangleReinoUnido",
+
   };
 
   return banderas[country] || ""; // Devuelve el estilo de la bandera o una cadena vacía si no se encuentra el país

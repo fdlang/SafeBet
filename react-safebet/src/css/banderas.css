@@ -222,3 +222,12 @@
     background-size: 100% 100%;
     background-image: url('/img/banderas/indonesia.png');
 }
+
+.triangleReinoUnido {
+    width: 50px;
+    height: 30px;
+    float: right;
+    margin-left: 10px;
+    background-size: 100% 100%;
+    background-image: url('/img/banderas/reinoUnido.png');
+}

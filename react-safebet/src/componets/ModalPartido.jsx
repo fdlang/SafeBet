@@ -48,7 +48,7 @@ export default function ModalPartido() {
 					) : (
 						<div>
 							<img
-								className='pt-5'
+								className='pt-5 w-full object-contain'
 								alt={`Imagen equipo 1, jugador 1 ${jugador1}`}
 								src={jugador1}
 							/>
@@ -57,7 +57,7 @@ export default function ModalPartido() {
 							</p>
 
 							<img
-								className='pt-5'
+								className='pt-5 w-full object-contain'
 								alt={`Imagen equipo 1, jugador 2 ${jugador2}`}
 								src={jugador2}
 							/>
@@ -154,7 +154,7 @@ export default function ModalPartido() {
 					) : (
 						<div>
 							<img
-								className='pt-5'
+								 className='pt-5 w-full object-contain'
 								alt={`Imagen equipo 2, jugador 3 ${jugador3}`}
 								src={jugador3}
 							/>
@@ -163,7 +163,7 @@ export default function ModalPartido() {
 							</p>
 
 							<img
-								className='pt-5'
+								 className='pt-5 w-full object-contain'
 								alt={`Imagen equipo 1, jugador 2 ${jugador4}`}
 								src={jugador4}
 							/>
