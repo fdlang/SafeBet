@@ -30,7 +30,7 @@ export default function InicioUser() {
 	return (
 		<>
 			<h1 className="text-4xl font-black">{titulo}</h1>
-			<p className="text-2xl my-10">Partidos disponibles.</p>
+			<p className="text-2xl my-10">Partidos disponibles, pincha sobre el partido para más información.</p>
 
 			<div className="grid gap-4 grid-cols-1 md:grid-flow-cols-2 xl:grid-cols-3">
 				{partidos.map(partido => (
