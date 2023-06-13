@@ -1,4 +1,4 @@
-.triangleFrancia {
+.banderaFrancia {
     width: 50px;
     height: 30px; 
     float: right;
@@ -7,7 +7,7 @@
     background-image: url('/img/banderas/francia.png');
 }
 
-.triangleSuiza {
+.banderaSuiza {
     width:50px;
     height: 30px;
     float: right;
@@ -16,7 +16,7 @@
     background-image: url('/img/banderas/suiza.png');
 }
 
-.triangleMarruecos {
+.banderaMarruecos {
     width: 50px;
     height: 30px;
     float: right;
@@ -25,7 +25,7 @@
     background-image: url('/img/banderas/marruecos.png');
 }
 
-.triangleAustria {
+.banderaAustria {
     width: 50px;
     height: 30px;
     float: right;
@@ -34,7 +34,7 @@
     background-image: url('/img/banderas/austria.png');
 }
 
-.triangleBrasil {
+.banderaBrasil {
     width: 50px;
     height: 30px;
     float: right;
@@ -43,7 +43,7 @@
     background-image: url('/img/banderas/brasil.png');
 }
 
-.triangleItalia {
+.banderaItalia {
     width: 50px;
     height: 30px;
     float: right;
@@ -52,7 +52,7 @@
     background-image: url('/img/banderas/italia.png');
 }
 
-.triangleBulgaria {
+.banderaBulgaria {
     width: 50px;
     height: 30px;
     float: right;
@@ -61,7 +61,7 @@
     background-image: url('/img/banderas/bulgaria.png');
 }
 
-.triangleMacedonia {
+.banderaMacedonia {
     width: 50px;
     height: 30px;
     float: right;
@@ -70,7 +70,7 @@
     background-image: url('/img/banderas/macedonia.png');
 }
 
-.triangleJapon {
+.banderaJapon {
     width: 50px;
     height: 30px;
     float: right;
@@ -79,7 +79,7 @@
     background-image: url('/img/banderas/japon.png');
 }
 
-.triangleMexico {
+.banderaMexico {
     width: 50px;
     height: 30px;
     float: right;
@@ -88,7 +88,7 @@
     background-image: url('/img/banderas/mexico.png');
 }
 
-.triangleEtiopia {
+.banderaEtiopia {
     width: 50px;
     height: 30px;
     float: right;
@@ -97,7 +97,7 @@
     background-image: url('/img/banderas/etiopia.png');
 }
 
-.triangleSerbia {
+.banderaSerbia {
     width: 50px;
     height: 30px;
     float: right;
@@ -106,7 +106,7 @@
     background-image: url('/img/banderas/serbia.png');
 }
 
-.triangleRomania {
+.banderaRomania {
     width: 50px;
     height: 30px;
     float: right;
@@ -115,7 +115,7 @@
     background-image: url('/img/banderas/rumania.png');
 }
 
-.triangleEspania {
+.banderaEspania {
     width: 50px;
     height: 30px;
     float: right;
@@ -124,7 +124,7 @@
     background-image: url('/img/banderas/españa.png');
 }
 
-.triangleEslovenia {
+.banderaEslovenia {
     width: 50px;
     height: 30px;
     float: right;
@@ -133,7 +133,7 @@
     background-image: url('/img/banderas/eslovenia.png');
 }
 
-.triangleUsa {
+.banderaUsa {
     width: 50px;
     height: 30px;
     float: right;
@@ -142,7 +142,7 @@
     background-image: url('/img/banderas/usa.png');
 }
 
-.triangleTurkia {
+.banderaTurkia {
     width: 50px;
     height: 30px;
     float: right;
@@ -151,7 +151,7 @@
     background-image: url('/img/banderas/turkia.png');
 }
 
-.triangleKorea {
+.banderaKorea {
     width: 50px;
     height: 30px;
     float: right;
@@ -160,7 +160,7 @@
     background-image: url('/img/banderas/coreaSur.png');
 }
 
-.triangleTunisia {
+.banderaTunisia {
     width: 50px;
     height: 30px;
     float: right;
@@ -169,7 +169,7 @@
     background-image: url('/img/banderas/tunisia.png');
 }
 
-.triangleCheca {
+.banderaCheca {
     width: 50px;
     height: 30px;
     float: right;
@@ -178,7 +178,7 @@
     background-image: url('/img/banderas/checa.png');
 }
 
-.triangleBosnia {
+.banderaBosnia {
     width: 50px;
     height: 30px;
     float: right;
@@ -187,7 +187,7 @@
     background-image: url('/img/banderas/bosnia.png');
 }
 
-.triangleAlemania {
+.banderaAlemania {
     width: 50px;
     height: 30px;
     float: right;
@@ -196,7 +196,7 @@
     background-image: url('/img/banderas/alemania.png');
 }
 
-.trianglePortugal {
+.banderaPortugal {
     width: 50px;
     height: 30px;
     float: right;
@@ -205,7 +205,7 @@
     background-image: url('/img/banderas/portugal.png');
 }
 
-.triangleTailandia {
+.banderaTailandia {
     width: 50px;
     height: 30px;
     float: right;
@@ -214,7 +214,7 @@
     background-image: url('/img/banderas/tailandia.png');
 }
 
-.triangleIndonesia {
+.banderaIndonesia {
     width: 50px;
     height: 30px;
     float: right;
@@ -223,7 +223,7 @@
     background-image: url('/img/banderas/indonesia.png');
 }
 
-.triangleReinoUnido {
+.banderaReinoUnido {
     width: 50px;
     height: 30px;
     float: right;
@@ -232,11 +232,65 @@
     background-image: url('/img/banderas/reinoUnido.png');
 }
 
-.trianguleWorld {
+.banderaWorld {
     width: 50px;
     height: 40px;
     float: right;
     margin-left: 10px;
     background-size: 100% 100%;
     background-image: url('/img/banderas/world.png');
+}
+
+.bandareraNetherlands {
+    width: 50px;
+    height: 40px;
+    float: right;
+    margin-left: 10px;
+    background-size: 100% 100%;
+    background-image: url('/img/banderas/Netherlands.png');
+}
+
+.banderaBelgica {
+    width: 50px;
+    height: 35px;
+    float: right;
+    margin-left: 10px;
+    background-size: 100% 100%;
+    background-image: url('/img/banderas/belgica.png');
+}
+
+.banderaChina {
+    width: 50px;
+    height: 40px;
+    float: right;
+    margin-left: 10px;
+    background-size: 100% 100%;
+    background-image: url('/img/banderas/china.png');
+}
+
+.banderaDinamarca {
+    width: 50px;
+    height: 35px;
+    float: right;
+    margin-left: 10px;
+    background-size: 100% 100%;
+    background-image: url('/img/banderas/dinamarca.png');
+}
+
+.banderaTaiwan {
+    width: 50px;
+    height: 35px;
+    float: right;
+    margin-left: 10px;
+    background-size: 100% 100%;
+    background-image: url('/img/banderas/taiwan.jpg');
+}
+
+.banderaPuertoRico {
+    width: 50px;
+    height: 35px;
+    float: right;
+    margin-left: 10px;
+    background-size: 100% 100%;
+    background-image: url('/img/banderas/puertoRico.png');
 }

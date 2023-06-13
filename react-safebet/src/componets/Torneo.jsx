@@ -20,7 +20,7 @@ export default function Torneo({torneo}){
 		const categoria = category(name);
 	
 		const enviarID = (id) => {		  
-			axios.get(`http://localhost:8000/api/partido/${id}`)
+			axios.get(`${import.meta.env.VITE_API_URL}/api/partido/${id}`)
 			  .then((response) => {
 				console.log("Respuesta enviarID: ", response);
 			  })
@@ -30,7 +30,6 @@ export default function Torneo({torneo}){
 		  };
 		  
 	 
-		
 		return (
 				<Link 
 					onClick={() => {
