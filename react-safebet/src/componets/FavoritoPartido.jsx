@@ -1,25 +1,26 @@
 import useSafeBet from "../hooks/useSafeBet";
+import { formatNameTorneo } from '../utils/helpers'
 
 export default function FavoritoPartido({partido}) {
     
-    const {handleEliminarFavoritoPartido} = useSafeBet();
+    const {handleEliminarFavoritoPartido, datos} = useSafeBet();
     const { 
         id, 
         ["home_name"]: jugador1, 
         ["away_name"]: jugador2, 
         homeResult,
-        awayResult,
-        tournament_name,        
+        awayResult,      
         
     } = partido;
 
-  
+    const torneo = formatNameTorneo(datos.name);
+
     return (
         <div className="shadow space-y-1 p-4 bg-white">
         <div className="space-y-2">
-          <p className="text-xl font-bold">{tournament_name}</p>
+          <p className="text-xl font-bold">{torneo}</p>
           <p className="text-lg ">{jugador1}  VS  {jugador2}</p>
-          <p className="text-lg text-gray-700"> Resultado: {homeResult ? {homeResult} - {awayResult} : "Por definir"} </p>
+          <p className="text-lg text-gray-700"> Resultado: {homeResult && awayResult ? homeResult + " - " + awayResult : "Por definir"} </p>
         </div>
   
         <div className="flex justify-between gap-2 pb-4">

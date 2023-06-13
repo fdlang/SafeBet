@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import {RouterProvider} from 'react-router-dom'
-import {SafeBetProvider} from './context/safebetProvider'
+import {SafeBetProvider} from './context/SafeBetProvider'
 import router from './router'
 import './index.css'
 
