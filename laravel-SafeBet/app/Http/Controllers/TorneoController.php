@@ -50,6 +50,14 @@ class TorneoController extends Controller
     }
 
 
+
+    public function getTorneo($id) {
+        $torneo = Torneo::where('id', $id)->get();
+
+		return new TorneoCollection($torneo);
+    }
+
+
     /**
      * Remove the specified resource from storage.
      */

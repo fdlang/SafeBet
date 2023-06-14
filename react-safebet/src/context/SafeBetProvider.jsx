@@ -94,7 +94,7 @@ const SafeBetProvider = ({children}) => {
         mutate('/api/favoritos');
       };
           
-      const handleEliminarFavoritoPartido = async (id) => {
+    const handleEliminarFavoritoPartido = async (id) => {
         try {
             const token = localStorage.getItem('AUTH_TOKEN');
             const { data } = await clienteAxios.delete(`/api/favoritos/${id}`, 

@@ -27,8 +27,8 @@ return new class extends Migration
             $table->string('partialresult');
             $table->string('result');
             $table->string('country_name');
-            $table->double('odds_local');
-            $table->double('odds_visitor');
+            $table->double('odds_local')->nullable();
+            $table->double('odds_visitor')->nullable();
             $table->timestamps();   
         });
     }

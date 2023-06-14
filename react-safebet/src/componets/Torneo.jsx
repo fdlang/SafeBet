@@ -34,7 +34,7 @@ export default function Torneo({torneo}){
 				<Link 
 					onClick={() => {
 						handleClickDatos(torneo);
-						enviarID(id);             
+						enviarID(parseInt(id));             
 					}}
 					to='/partidos/inicio'
 				>

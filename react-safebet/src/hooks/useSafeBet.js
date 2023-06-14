@@ -1,5 +1,5 @@
 import {useContext} from "react";
-import SafeBetContext from "../context/safebetProvider";
+import SafeBetContext from "../context/SafeBetProvider";
 
 const useSafeBet = () => {
   return useContext(SafeBetContext);
