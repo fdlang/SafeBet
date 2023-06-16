@@ -1,5 +1,7 @@
 ## Anteproyecto de una aplicación web para análisis de cuotas deportivas: SafeBet
 
+![Texto alternativo](./laravel-SafeBet/public/img/logo.png)
+
 ### Introducción
 
 Este documento describe el anteproyecto de una aplicación web que permitirá a los usuarios autentificados realizar apuestas deportivas de manera inteligente. La aplicación se conectará a una API externa para descargar datos de casas de apuestas deportivas, los cuales serán analizados y comparados para encontrar las mejores cuotas para apostar.
