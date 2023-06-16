@@ -38,7 +38,7 @@ export default function Partido({ partido }) {
                 handleClickDatosPartido(partido);
             }}
         >
-            <div className="flex items-center">
+            <div className="flex items-center" >
                 <div className="flex flex-col items-center">
                     {
                         is_double === 0 ? (
