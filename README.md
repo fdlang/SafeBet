@@ -11,7 +11,8 @@
 
 - Creea en la raiz del proyecto laravel-safebet un fichero ".env" y "package.json" 
 - Creea en la raiz del proyecto react-safebet un fichero ".env" y "package.json"  
+- Configure el fichero laravel-safebet/config/apiBroker.php con sus credenciales. 
 
-Para configurar los ficheros .env y package.json, pongase en contacto con el propietario del repositorio.
+Para configurar los ficheros pongase en contacto con el propietario del repositorio.
 
 Correo: [angel_arcos@outlook.es](URL)
