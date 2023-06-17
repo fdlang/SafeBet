@@ -33,9 +33,10 @@ Una vez configurado todos los ficheros, asegurarse de tener instalado todas las 
     ```bash
 
     npm install
-	
+
     ```
 
+</br>
 
 ### CONEXION API EXTERNA
 
@@ -57,6 +58,7 @@ return [
 
 ```
     
+</br>
 
 ### MIGRAR BASE DE DATOS
 
@@ -68,6 +70,8 @@ php artisan migrate --seed
 
 ```
 
+</br>
+
 ### INICIAR APLICACION WEB (SERVIDOR)
 
 Ejecutar el comando desde el terminal en la raiz del proyecto laravel-safebet 
@@ -78,6 +82,8 @@ php artisan serve
 
 ```
 
+</br>
+
 ### INICIAR APLICACION WEB (CLIENTE)
 
 Ejecutar el comando desde el terminal en la raiz del proyecto react-safebet 
@@ -87,6 +93,8 @@ Ejecutar el comando desde el terminal en la raiz del proyecto react-safebet
 npm run dev
 
 ```
+
+</br>
 
 ### Dirección web SAFEBET 
 
