@@ -42,47 +42,47 @@ Una vez dado de alta para conectar con la api externa debe crear el fichero apiB
 
 Contenido del fichero apiBroker.php:
 
-    ```php
+```php
 
-    <?php
+<?php
 
-    return [  
-        'key' => "BEARER <INSERTAR TOKEN AQUI>",
-        'content' => "application/json",
-    ];
+return [  
+	'key' => "BEARER <INSERTAR TOKEN AQUI>",
+	'content' => "application/json",
+];
 
-    ```
+```
     
 
 ### MIGRAR BASE DE DATOS
 
 Para migrar la base de datos introduzca desde el terminal en la raiz del proyecto laravel-safebet
 
-    ```php 
-	
-    php artisan migrate --seed
+```php 
 
-    ```
+php artisan migrate --seed
+
+```
 
 ### INICIAR APLICACION WEB (SERVIDOR)
 
 Ejecutar el comando desde el terminal en la raiz del proyecto laravel-safebet 
 
-    ```php
+```php
 
-    php artisan serve
+php artisan serve
 
-    ```
+```
 
 ### INICIAR APLICACION WEB (CLIENTE)
 
 Ejecutar el comando desde el terminal en la raiz del proyecto react-safebet 
 
-    ```php
+```php
 
-    npm run dev
-    
-    ```
+npm run dev
+
+```
 
 ### Dirección web SAFEBET 
 
