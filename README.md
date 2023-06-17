@@ -22,14 +22,14 @@ Una vez configurado todos los ficheros, asegurarse de tener instalado todas las 
   - Abrir consola en la raiz del proyecto laravel-safebet y ejecutar el comando
 
     ```js
-      npm install
-      composer install
+    npm install
+    composer install
     ```
 
   - Abrir consola en la raiz del proyecto react-safebet y ejecutar el comando
 
     ```js
-      npm install
+    npm install
     ```
 
 
@@ -43,12 +43,12 @@ Una vez dado de alta para conectar con la api externa debe crear el fichero apiB
 Contenido del fichero apiBroker.php:
 
     ```js
-      <?php
+    <?php
 
-      return [  
-          'key' => "BEARER <INSERTAR TOKEN AQUI>",
-          'content' => "application/json",
-      ];
+    return [  
+        'key' => "BEARER <INSERTAR TOKEN AQUI>",
+        'content' => "application/json",
+    ];
     ```
     
 
@@ -57,7 +57,7 @@ Contenido del fichero apiBroker.php:
 Para migrar la base de datos introduzca desde el terminal en la raiz del proyecto laravel-safebet
 
     ```js 
-      php artisan migrate --seed
+    php artisan migrate --seed
     ```
 
 ### INICIAR APLICACION WEB (SERVIDOR)
@@ -65,7 +65,7 @@ Para migrar la base de datos introduzca desde el terminal en la raiz del proyect
 Ejecutar el comando desde el terminal en la raiz del proyecto laravel-safebet 
 
     ```js
-      php artisan serve
+    php artisan serve
     ```
 
 ### INICIAR APLICACION WEB (CLIENTE)
@@ -73,7 +73,7 @@ Ejecutar el comando desde el terminal en la raiz del proyecto laravel-safebet
 Ejecutar el comando desde el terminal en la raiz del proyecto react-safebet 
 
     ```js
-      npm run dev
+    npm run dev
     ```
 
 ### Dirección web SAFEBET 
