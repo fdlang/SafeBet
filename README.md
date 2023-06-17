@@ -21,14 +21,14 @@ Correo: [angel_arcos@outlook.es](URL)
 Una vez configurado todos los ficheros, asegurarse de tener instalado todas las dependencias:
   - Abrir consola en la raiz del proyecto laravel-safebet y ejecutar el comando
 
-    ```javaScript
+    ```bash
       npm install
       composer install
-     ```
+    ```
 
   - Abrir consola en la raiz del proyecto react-safebet y ejecutar el comando
 
-    ```javaScript
+    ```bash
       npm install
 
     ```
@@ -43,7 +43,7 @@ Una vez dado de alta para conectar con la api externa debe crear el fichero apiB
 
 Contenido del fichero apiBroker.php:
 
-    ```
+    ```bash
       <?php
 
       return [  
@@ -58,7 +58,7 @@ Contenido del fichero apiBroker.php:
 
 Para migrar la base de datos introduzca desde el terminal en la raiz del proyecto laravel-safebet
 
-    ```
+    ```bash
       php artisan migrate --seed
 
     ```
@@ -67,7 +67,7 @@ Para migrar la base de datos introduzca desde el terminal en la raiz del proyect
 
 Ejecutar el comando desde el terminal en la raiz del proyecto laravel-safebet 
 
-    ```
+    ```bash
       php artisan serve
 
     ```
@@ -76,7 +76,7 @@ Ejecutar el comando desde el terminal en la raiz del proyecto laravel-safebet
 
 Ejecutar el comando desde el terminal en la raiz del proyecto react-safebet 
 
-    ```
+    ```bash
       npm run dev
 
     ```
