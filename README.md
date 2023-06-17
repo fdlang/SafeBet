@@ -21,15 +21,19 @@ Correo: [angel_arcos@outlook.es](URL)
 Una vez configurado todos los ficheros, asegurarse de tener instalado todas las dependencias:
   - Abrir consola en la raiz del proyecto laravel-safebet y ejecutar el comando
 
-    ```
+    ```bash
+
     npm install
     composer install
+
     ```
 
   - Abrir consola en la raiz del proyecto react-safebet y ejecutar el comando
 
-    ```
+    ```bash
+
     npm install
+	
     ```
 
 
@@ -58,7 +62,7 @@ return [
 
 Para migrar la base de datos introduzca desde el terminal en la raiz del proyecto laravel-safebet
 
-```php 
+```bash 
 
 php artisan migrate --seed
 
@@ -68,7 +72,7 @@ php artisan migrate --seed
 
 Ejecutar el comando desde el terminal en la raiz del proyecto laravel-safebet 
 
-```php
+```bash
 
 php artisan serve
 
@@ -78,7 +82,7 @@ php artisan serve
 
 Ejecutar el comando desde el terminal en la raiz del proyecto react-safebet 
 
-```php
+```bash
 
 npm run dev
 
