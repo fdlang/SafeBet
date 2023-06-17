@@ -33,6 +33,7 @@ Una vez configurado todos los ficheros, asegurarse de tener instalado todas las 
 
     ```
 
+
 ### CONEXION API EXTERNA
 
 Antes de conectar con la api externa debe darse de alta en el servio: 
@@ -42,7 +43,7 @@ Una vez dado de alta para conectar con la api externa debe crear el fichero apiB
 
 Contenido del fichero apiBroker.php:
 
-    ```php
+    ```
       <?php
 
       return [  
