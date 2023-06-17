@@ -43,6 +43,8 @@ Una vez configurado todos los ficheros, asegurarse de tener instalado todas las 
 Antes de conectar con la api externa debe darse de alta en el servio: 
   - URL: [https://brokersports.club/](URL)
 
+</br>
+
 Una vez dado de alta para conectar con la api externa debe crear el fichero apiBroker.php con sus credenciales. Dicho fichero debe ser alojado en el directorio laravel-safebet/config
 
 Contenido del fichero apiBroker.php:
