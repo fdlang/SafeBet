@@ -294,3 +294,48 @@
     background-size: 100% 100%;
     background-image: url('/img/banderas/puertoRico.png');
 }
+
+.banderaColombia {
+    width: 50px;
+    height: 35px;
+    float: right;
+    margin-left: 10px;
+    background-size: 100% 100%;
+    background-image: url('/img/banderas/colombia.jpg');
+}
+
+.banderaIsrael {
+    width: 50px;
+    height: 35px;
+    float: right;
+    margin-left: 10px;
+    background-size: 100% 100%;
+    background-image: url('/img/banderas/israel.png');
+}
+
+.banderaPolonia {
+    width: 50px;
+    height: 35px;
+    float: right;
+    margin-left: 10px;
+    background-size: 100% 100%;
+    background-image: url('/img/banderas/polonia.png');
+}
+
+.banderaSlovakia {
+    width: 50px;
+    height: 35px;
+    float: right;
+    margin-left: 10px;
+    background-size: 100% 100%;
+    background-image: url('/img/banderas/eslovakia.png');
+}
+
+.banderaSweden {
+    width: 50px;
+    height: 35px;
+    float: right;
+    margin-left: 10px;
+    background-size: 100% 100%;
+    background-image: url('/img/banderas/swenden.png');
+}

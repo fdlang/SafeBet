@@ -33,6 +33,11 @@ export function bandera(country) {
     Denmark: "banderaDinamarca",
     Taiwan: "banderaTaiwan",
     "Puerto rico": "banderaPuertoRico",
+    Colombia: "banderaColombia",
+    Israel: "banderaIsrael",
+    Poland: "banderaPolonia",
+    Slovakia: "banderaSlovakia",
+    Sweden: "banderaSweden",
   };
 
   return banderas[country] || ""; // Devuelve el estilo de la bandera o una cadena vacía si no se encuentra el país

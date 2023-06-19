@@ -452,10 +452,36 @@ export function mapPlayerImage(playerName) {
 			return "/img/players_men/marcel-granollers.png";
 		}else if (playerName.includes("Zeballos H.")){
 			return "/img/players_men/horacio-zeballos.png";
+		}else if (playerName.includes("Lammons N.")){
+			return "/img/players_men/nathaniel_lammons.png";
+		}else if (playerName.includes("Withrow J.")){
+			return "/img/players_men/withrow_jackson.png";
+		}else if (playerName.includes("Bolelli S.")){
+			return "/img/players_men/simone_bolelli.png";
+		}else if (playerName.includes("Olivetti A.")){
+			return "/img/players_men/albano-olivetti.jpg";
+		}else if (playerName.includes("Vega Hernandez D.")){
+			return "/img/players_men/david_vega_hernandez.png";
+		}else if (playerName.includes("Erler A.")){
+			return "/img/players_men/alexander_erler.png";
+		}else if (playerName.includes("Matos R.")){
+			return "/img/players_men/matos_rafael.jpg";
+		}else if (playerName.includes("Miedler L.")){
+			return "/img/players_men/lucas_miedler.png";
+		}else if (playerName.includes("Haase R.")){
+			return "/img/players_men/robin_haase.png";
+		}else if (playerName.includes("Demoliner M.")){
+			return "/img/players_men/marcelo_demoliner.png";
+		}else if (playerName.includes("Melo M.")){
+			return "/img/players_men/marcelo_melo.png";
+		}else if (playerName.includes("Peers J.")){
+			return "/img/players_men/john_peers.png";
+		}else if (playerName.includes("Struff J-L.")){
+			return "/img/players_men/struff-full.png";
 		}
 	}
     
-	
+
     return "/img/players_men/default.png";
   }
   
