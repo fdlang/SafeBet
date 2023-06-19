@@ -25,7 +25,7 @@ export default function Torneo({torneo}){
 				console.log("Respuesta enviarID: ", response);
 			  })
 			  .catch((error) => {
-				console.log("ERROR AL ENVIAR URL: ", error);
+				console.log("ERROR AL ENVIAR URL: ", error.response);
 			  });      
 		  };
 		  
