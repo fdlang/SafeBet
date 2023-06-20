@@ -478,10 +478,74 @@ export function mapPlayerImage(playerName) {
 			return "/img/players_men/john_peers.png";
 		}else if (playerName.includes("Struff J-L.")){
 			return "/img/players_men/struff-full.png";
+		}else if (playerName.includes("Wessels L.")){
+			return "/img/players_men/wessels_louis.png";
+		}else if (playerName.includes("Safiullin R.")){
+			return "/img/players_men/roman_safiullin.png";
+		}else if (playerName.includes("Thiem D.")){
+			return "/img/players_men/dominic_thiem.png";
+		}else if (playerName.includes("Murray A.")){
+			return "/img/players_men/andy_murray.png";
+		}else if (playerName.includes("Van De Zandschulp B.")){
+			return "/img/players_men/van-de-zandschulp.png";
+		}else if (playerName.includes("Raonic M.")){
+			return "/img/players_men/milos_raonic.png";
+		}else if (playerName.includes("Fils A.")){
+			return "/img/players_men/arthur_fils.png";
+		}else if (playerName.includes("Chandrasekar A.")){
+			return "/img/players_men/anirudh_chandrasekar.png";
+		}else if (playerName.includes("Prashanth V.")){
+			return "/img/players_men/prashanth_nvijay.png";
+		}else if (playerName.includes("Balaji N. S.")){
+			return "/img/players_men/balaji-sriram.png";
+		}else if (playerName.includes("Cabral F.")){
+			return "/img/players_men/francisco_cabral.png";
+		}else if (playerName.includes("Qureshi A.")){
+			return "/img/players_men/aisam_qureshi.png";
+		}else if (playerName.includes("Stevens B.")){
+			return "/img/players_men/bart_stevens.png";
+		}else if (playerName.includes("Escobar G.")){
+			return "/img/players_men/gonzalo_escobar.png";
+		}else if (playerName.includes("Harris A.")){
+			return "/img/players_men/harris_andrew.png";
+		}else if (playerName.includes("Nedovyesov A.")){
+			return "/img/players_men/aleksandr_nedovyesov.png";
+		}else if (playerName.includes("Saville L.")){
+			return "/img/players_men/saville_luke.png";
+		}else if (playerName.includes("Jebens H.")){
+			return "/img/players_men/hendrik_jebens.png";
+		}else if (playerName.includes("Nys H.")){
+			return "/img/players_men/nys_hugo.png";
+		}else if (playerName.includes("Zielinski J.")){
+			return "/img/players_men/jan_zielinski.png";
+		}else if (playerName.includes("Roger-Vasselin E.")){
+			return "/img/players_men/edouard_roger-vasselin.png";
+		}else if (playerName.includes("Glasspool L.")){
+			return "/img/players_men/lloyd_glasspool.png";
+		}else if (playerName.includes("O'Mara J.")){
+			return "/img/players_men/omara_jonny.png";
+		}else if (playerName.includes("Cash J.")){
+			return "/img/players_men/julian_cash.png";
+		}else if (playerName.includes("Mahut N.")){
+			return "/img/players_men/nicolas_mahut.png";
+		}else if (playerName.includes("Martin F.")){
+			return "/img/players_men/fabrice_martin.png";
+		}else if (playerName.includes("Bopanna R.")){
+			return "/img/players_men/rohan_bopanna.png";
+		}else if (playerName.includes("Ebden M.")){
+			return "/img/players_men/matthew_ebden.png";
+		}else if (playerName.includes("Murray J.")){
+			return "/img/players_men/jamie-murray.png";
+		}else if (playerName.includes("Venus M.")){
+			return "/img/players_men/michael_venus.png";
+		}else if (playerName.includes("Mektic N.")){
+			return "/img/players_men/nikola_mektic.png";
+		}else if (playerName.includes("Pavic M.")){
+			return "/img/players_men/mate_pavic.png";
 		}
 	}
     
-
+	
     return "/img/players_men/default.png";
   }
   

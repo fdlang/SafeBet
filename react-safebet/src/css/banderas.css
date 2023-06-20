@@ -339,3 +339,21 @@
     background-size: 100% 100%;
     background-image: url('/img/banderas/swenden.png');
 }
+
+.banderaArgentina {
+    width: 50px;
+    height: 35px;
+    float: right;
+    margin-left: 10px;
+    background-size: 100% 100%;
+    background-image: url('/img/banderas/argentina.png');
+}
+
+.banderaRepDominic {
+    width: 50px;
+    height: 35px;
+    float: right;
+    margin-left: 10px;
+    background-size: 100% 100%;
+    background-image: url('/img/banderas/repdominic.png');
+}
